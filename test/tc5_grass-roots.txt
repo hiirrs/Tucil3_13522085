@@ -1,0 +1,49 @@
+# - UCS
+WELCOME TO THE WORD LADDER GAME!
+Enter start word: GRASS
+Enter end word: rootS
+Choose Algorithm:
+1. UCS
+2. GBFS
+3. A*
+Enter your choice: 1
+UCS:
+Visited nodes count: 604
+grass grads goads roads roods roots
+
+Path length: 6
+Execution time: 25 ms
+
+
+# - GBFS
+WELCOME TO THE WORD LADDER GAME!
+Enter start word: grass
+Enter end word: roots
+Choose Algorithm:
+1. UCS
+2. GBFS
+3. A*
+Enter your choice: 2
+Greedy Best First Search:
+Visited nodes count: 6
+grass gross grots trots toots roots
+
+Path length: 6
+Execution time: 16 ms
+
+
+# - A*
+WELCOME TO THE WORD LADDER GAME!
+Enter start word: grass
+Enter end word: roots
+Choose Algorithm:
+1. UCS
+2. GBFS
+3. A*
+Enter your choice: 3
+A*:
+Visited nodes count: 25
+grass brass brats boats boots roots 
+
+Path length: 6
+Execution time: 0 ms

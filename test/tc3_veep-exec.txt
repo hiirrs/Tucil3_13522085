@@ -1,0 +1,48 @@
+# - UCS
+WELCOME TO THE WORD LADDER GAME!
+Enter start word: veep
+Enter end word: exec
+Choose Algorithm:
+1. UCS
+2. GBFS
+3. A*
+Enter your choice: 1
+UCS:
+Visited nodes count: 2651
+veep vees pees pyes eyes exes exec
+
+Path length: 7
+Execution time: 77 ms
+
+
+# - GBFS
+WELCOME TO THE WORD LADDER GAME!
+Enter start word: veep
+Enter end word: exec
+Choose Algorithm:
+1. UCS
+2. GBFS
+3. A*
+Enter your choice: 2
+Greedy Best First Search:
+Visited nodes count: 49
+veep vees lees lyes eyes exes exec
+
+Path length: 7
+Execution time: 6 ms
+
+# - A*
+WELCOME TO THE WORD LADDER GAME!
+Enter start word: veep
+Enter end word: exec
+Choose Algorithm:
+1. UCS
+2. GBFS
+3. A*
+Enter your choice: 3
+A*:
+Visited nodes count: 166
+veep vees rees ryes eyes exes exec
+
+Path length: 7
+Execution time: 17 ms

@@ -1,12 +1,5 @@
-@echo off
-rem 
 cd src
-
-rem 
-javac WordLadderGame.java
-
-rem 
-if %errorlevel% equ 0 (
-    rem 
-    java WordLadderGame
-)
+javac -d ../bin *.java
+cp words.txt ../bin/
+cd ../bin
+java WordLadderGame

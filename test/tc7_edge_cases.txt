@@ -1,0 +1,41 @@
+WELCOME TO THE WORD LADDER GAME!
+Enter start word: efheiof3
+Warning: Start word should contain only alphabets.
+Enter start word: eiiefjor
+Warning: Start word does not exist in the word list.
+Enter start word: kafe
+Warning: Start word does not exist in the word list.
+Enter start word: cafe
+Enter end word: efrge
+Warning: End word does not exist in the word list.
+Enter end word: love
+Choose Algorithm:
+1. UCS
+2. GBFS
+3. A*
+Enter your choice: 1
+UCS:
+Visited nodes count: 646
+cafe cave lave love
+
+Path length: 4
+Execution time: 28 ms
+
+WELCOME TO THE WORD LADDER GAME!
+Enter start word: believerts
+Warning: Start word does not exist in the word list.
+Enter start word: believer
+Enter end word: festivat
+Warning: End word does not exist in the word list.
+Enter end word: festive
+Choose Algorithm:
+1. UCS
+2. GBFS
+3. A*
+Enter your choice: 1
+UCS:
+Visited nodes count: 7
+No path found
+
+No path found
+Execution time: 0 ms

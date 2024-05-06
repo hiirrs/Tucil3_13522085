@@ -1,0 +1,51 @@
+# - UCS
+WELCOME TO THE WORD LADDER GAME!
+Enter start word: stronh
+Warning: Start word does not exist in the word list.
+Enter start word: strong
+Enter end word: dreams
+Choose Algorithm:
+1. UCS
+2. GBFS
+3. A*
+Enter your choice: 1
+UCS:
+Visited nodes count: 7555
+strong string sering serins series scries scrips strips streps steeps sleeps sleeks cleeks creeks creaks creams dreams
+
+Path length: 17
+Execution time: 145 ms
+
+
+# - GBFS
+WELCOME TO THE WORD LADDER GAME!
+Enter start word: strong 
+Enter end word: dreams
+Choose Algorithm:
+1. UCS
+2. GBFS
+3. A*
+Enter your choice: 2
+Greedy Best First Search:
+Visited nodes count: 373
+strong sarong barong barons bacons racons recons redons redans dedans dewans sewans sowans rowans rowens rowers dowers doters daters taters tatars talars malars molars polars polers pokers tokers toyers twyers twiers triers triens treens greens greets greats treats treads dreads dreams
+
+Path length: 41
+Execution time: 20 ms
+
+
+# - A*
+WELCOME TO THE WORD LADDER GAME!
+Enter start word: strong
+Enter end word: dreams
+Choose Algorithm:
+1. UCS
+2. GBFS
+3. A*
+Enter your choice: 3
+A*:
+Visited nodes count: 2327
+strong string sering serins series scries scrips strips streps steeps sleeps sleeks cleeks creeks creaks creams dreams
+
+Path length: 17
+Execution time: 97 ms

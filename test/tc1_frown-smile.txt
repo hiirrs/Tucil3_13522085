@@ -1,0 +1,49 @@
+# - UCS
+WELCOME TO THE WORD LADDER GAME!
+Enter start word: frown
+Enter end word: smile
+Choose Algorithm:
+1. UCS
+2. GBFS
+3. A*
+Enter your choice: 1
+UCS:
+Visited nodes count: 4347
+frown frows flows slows slots spots spits spite smite smile
+
+Path length: 10
+Execution time: 105 ms
+
+
+# - GBFS
+WELCOME TO THE WORD LADDER GAME!
+Enter start word: frown
+Enter end word: smile
+Choose Algorithm:
+1. UCS
+2. GBFS
+3. A*
+Enter your choice: 2
+Greedy Best First Search:
+Visited nodes count: 24
+frown brown brows broos brios trios trips tripe trine thine shine spine spile smile
+
+Path length: 14
+Execution time: 6 ms
+
+
+# - A*
+WELCOME TO THE WORD LADDER GAME!
+Enter start word: frown
+Enter end word: smile
+Choose Algorithm:
+1. UCS
+2. GBFS
+3. A*
+Enter your choice: 3
+A*:
+Visited nodes count: 341
+frown frows flows slows stows stoas stoae stole stile smile
+
+Path length: 10
+Execution time: 25 ms

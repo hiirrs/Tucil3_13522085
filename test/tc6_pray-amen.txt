@@ -1,0 +1,49 @@
+# - UCS
+WELCOME TO THE WORD LADDER GAME!
+Enter start word: pray
+Enter end word: amen
+Choose Algorithm:
+1. UCS
+2. GBFS
+3. A*
+Enter your choice: 1
+UCS:
+Visited nodes count: 3610
+pray gray grad grid arid amid amin amen
+
+Path length: 8
+Execution time: 92 ms
+
+
+# - GBFS
+WELCOME TO THE WORD LADDER GAME!
+Enter start word: pray
+Enter end word: amen
+Choose Algorithm:
+1. UCS
+2. GBFS
+3. A*
+Enter your choice: 2
+Greedy Best First Search:
+Visited nodes count: 49
+pray prey grey gley glee alee agee ages axes axis amis amin amen
+
+Path length: 13
+Execution time: 0 ms
+
+
+# - A*
+WELCOME TO THE WORD LADDER GAME!
+Enter start word: pray
+Enter end word: amen
+Choose Algorithm:
+1. UCS
+2. GBFS
+3. A*
+Enter your choice: 3
+A*:
+Visited nodes count: 442
+pray play plan pean pein pyin ayin amin amen
+
+Path length: 9
+Execution time: 31 ms

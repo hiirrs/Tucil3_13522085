@@ -1,7 +1,5 @@
-cd src
-
-javac -d ..\bin WordLadderGame.java
-
-if [ $? -eq 0 ]; then
-    java WordLadderGame
-fi
+cd "$(dirname "$0")"
+javac -d ../bin src/*.java
+cp src/words.txt ../bin/
+cd ../bin
+java -cp . WordLadderGame

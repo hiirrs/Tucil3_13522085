@@ -1,6 +1,6 @@
 <br />
 <div align="center">
-  <h2 align="center">Tugas Kecil 3 IF2211 Strategi Algoritma</h2>
+  <h1 align="center">Tugas Kecil 3 IF2211 Strategi Algoritma</h1>
 
   <p> Dibuat oleh : 13522085 - Zahira Dina Amalia
     <br />
@@ -8,186 +8,119 @@
   </p>
 </div>
 
-
-<!-- Daftar Isi -->
-<details>
-  <summary>Daftar Isi</summary>
-  <ol>
-    <li>
-      <a href="#penjelasan-singkat">Penjelasan Singkat</a>
-      <ul>
-        <li><a href="#dependansi">Dependansi</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#cara-penggunaan">Cara Penggunaan</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#instalasi">Instalasi</a></li>
-      </ul>
-    </li>
-    <li><a href="#struktru-program">Struktur Program</a></li>
-    <li><a href="#contoh-pemakaian">Contoh Pemakaian</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
-
+## Table of Contents
+* [Penjelasan Singkat](#penjelasan-singkat)
+* [Dependansi](#dependansi)
+* [Struktur Program](#struktur-program)
+* [Cara Penggunaan](#cara-penggunaan)
+<!-- * [License](#license) -->
 
 ## Penjelasan Singkat
 
-Program ini dibuat berdasarkan spesifikasi dari tugas besar 2 dari mata kuliah IF2211 Strategi Algoritma yang terdapat pada tautan berikut, <a href= https://informatika.stei.itb.ac.id/~rinaldi.munir/Stmik/2023-2024/Tubes2-Stima-2024.pdf> Spesifikasi Tugas Besar 2</a>.
+Program ini dibuat berdasarkan spesifikasi dari tugas kecil 3 dari mata kuliah IF2211 Strategi Algoritma yang terdapat pada tautan berikut, <a href= https://informatika.stei.itb.ac.id/~rinaldi.munir/Stmik/2023-2024/Tucil3-2024.pdf> Spesifikasi Tugas Kecil 3</a>.
 
-WikiRace atau Wiki Game adalah sebuah permainan yang menggunakan Wikipedia, sebuah situs ensiklopedia daring yang dikelola secara sukarela oleh berbagai orang di seluruh dunia. Dalam permainan ini, pemain dimulai dari satu artikel Wikipedia dan berusaha untuk menavigasi melalui berbagai artikel lainnya dengan mengikuti tautan di dalam setiap artikel, dengan tujuan mencapai artikel tertentu dalam waktu sesingkat mungkin atau dengan jumlah klik yang terbatas.
+Program yang dibuat akan menerima input berupa dua kata, yaitu start word dan end word, dari pengguna. Program kemudian akan mencari rantai kata yang menghubungkan start word dengan end word dengan aturan bahwa setiap kata dalam rantai harus berbeda dari kata sebelumnya hanya dalam satu huruf. Untuk mencari solusi, program akan menggunakan algoritma pencarian yang tepat, seperti BFS (Breadth-First Search) atau A* (A Star Search), untuk menemukan jalur terpendek antara kedua kata. Selama pencarian, program akan memeriksa apakah setiap kata yang dieksplorasi sesuai dengan aturan permainan.
+
+Setelah menemukan solusi, program akan mencetak rantai kata yang membentuk jalur dari start word ke end word, serta memberikan informasi tambahan seperti jumlah langkah yang dibutuhkan atau jumlah kata dalam rantai. Jika solusi tidak ditemukan, program akan memberikan pesan bahwa tidak ada solusi yang ditemukan. Selain itu, program juga dapat memberikan opsi kepada pengguna untuk memilih algoritma pencarian yang ingin digunakan.
+
 
 
 ### Dependansi
-Program ini menggunakan beberapa dependansi utama dalam pengembangannya
-
-* <a href=https://nodejs.org/en> Nodejs </a>
-
-* <a href=https://go.dev/> Go Language </a>
-
-<p align="right"><a href="#readme-top">kembali</a></p>
+Program ini menggunakan bahasa <a href=https://www.java.com/en/> Java </a> sebagai dependansi utama dalam pengembangannya pilihlah JDK.
 
 
 ## Struktur Program
 ```
 │
-├── frontend
-│   ├── node_modules
-│   |   ├── ...
-│   │   └── ...
-│   │
-│   ├── public
-│   |   ├── favicon.ico
-│   |   ├── index.html
-│   |   ├── logo192.png
-│   |   ├── logo512.png
-│   |   ├── manifest.json
-│   │   └── robots.txt
-│   │
-│   ├── src
-│   |   ├── assets
-|   |   |   ├── about
-|   |   |   ├── home
-|   |   |   ├── navbar
-|   |   |   └── race.
-|   |   |   
-│   |   ├── components
-|   |   |   ├── about.js
-|   |   |   ├── home.js
-|   |   |   ├── navbar.js
-|   |   |   └── race.js
-|   |   |  
-│   |   ├── App.js
-│   |   ├── index,js
-│   |   ├── styles.css
-│   │   └── robots.txt
-│   │
-│   ├── .gitignore
-│   ├── package-lock.json
-│   ├── package.json
-│   ├── README.md
-│   └── yarn.lock
+├── bin
+│   ├── Astar.class
+│   ├── Astar$Node.class
+│   ├── GBFS.class
+│   ├── Pair.class
+│   ├── UCS.class
+│   ├── UCS$Node.class
+│   ├── WordChecker.class
+│   ├── WordLadderGame.class
+│   ├── WordLadderGUI.class
+│   └── words.txt
+│ 
+├── doc
+│   └── Tucil3_13522085.pdf
+│   
+├── src
+│   ├── bin
+│   │   ├── Astar.class
+│   │   ├── Astar$Node.class
+│   │   ├── GBFS.class
+│   │   ├── Pair.class
+│   │   ├── UCS.class
+│   │   ├── UCS$Node.class
+│   │   └── WordLadderGame.class
+│   │ 
+│   ├── Astar.java
+│   ├── GBFS.java
+│   ├── Pair.java
+│   ├── UCS.java
+│   ├── WordChecker.java
+│   ├── WordLadderGame.java
+│   ├── WordLadderGUI.java
+│   └── words.txt
 │
-├── logic
-│   ├── internal
-│   │   ├── entities
-|   |   |   └── nodes.go
-│   │   ├── getPath
-|   |   |   ├── bfs.go
-|   |   |   └── ids.go
-|   |   └── tools
-|   |       └── scraping.go
-|   |
-│   ├── go.mod
-│   ├── go.sum
-│   └── main.go
+├── test
+│   ├── datatest.txt
+│   ├── tc1_frown-smile.txt
+│   ├── tc2_jean-gene.txt
+│   ├── tc3_veep-exec.txt
+│   ├── tc4_strong-dreams.txt
+│   ├── tc5_grass-roots.txt
+│   ├── tc6_pray-amen.txt
+│   └── tc7_edge_cases.txt
 │
-├── node_modules
-│   ├── ...
-│   ├── ...
-│   └── ...
-│
-├── image-2.png
-├── image-3.png
-├── image-4.png
-|
-├── package-lock.json
-│  
-├── package.json
-|
-└── README.md
+├── .gitattributes
+├── README.md
+├── run-CLI.bat
+├── run-CLI.sh
+├── run-GUI.bat
+└── run-CLI.sh
 
 ```
 
-## Cara Penggunaan
+
+## Cara Menjalankan Program
 
 Program dapat digunakan dengan melakukan penginstalan dengan mengikuti langkah-langkah di bawah ini.
 
-
-### Prerequisites
-
-Sebelum melakukan penginstallan, pastikan npm merupakaan versi terbaru dengan mengetikkan hal berikut pada terminal.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Instalasi
-
-Instalasi dapat dilakukan dengan melakukan langkah-langkah berikut.
-
 1. Lakukan `git clone` pada repository ini
    ```sh
-   git clone https://github.com/hiirrs/Tubes2_JB-racing.git
+   git clone https://github.com/hiirrs/Tucil3_13522085.git
    ```
-2. Install NPM packages
+2. Program ini memiliki dua macam tampilan yaitu Command Line Interface (CLI) dan Graphical User Interface (GUI). 
+* Untuk menjalankan CLI tuliskan pada terminal dengan directory repository ini
+- pada Linux/macOS
    ```sh
-   npm install
+   ./run-CLI.sh
    ```
-   
-3. Untuk menggunakan program, ketikkan berikut pada terminal folder repository
-   ```js
-   npm run dev
+- pada Windows
+   ```sh
+   ./run-CLI.bat
+   ``` 
+* Untuk menjalankan GUI tuliskan pada terminal dengan directory repository ini
+- pada Linux/macOS
+   ```sh
+   ./run-GUI.sh
    ```
-<p align="right"><a href="#readme-top">kembali</a></p>
+- pada Windows
+   ```sh
+   ./run-GUI.bat
+   ``` 
 
+## Cara Pemakaian Program
+- Masukkan start word dan end word. Program akan memeriksa kata-kata apakah panjangnya sama dan terdapat pada data kata-kata pada `words.txt`. 
+- Lalu, pilihlah macam algoritma yang akan digunakan untuk pencarian
+- Program kemudian akan memulai pencarian dan memperlihatkan jumlah simpul yang dilalui, panjang jalur kata, dan waktu eksekusi.
 
-## Contoh Pemakaian
-### Landing Page
-![alt website](image-2.png)
- - Setelah melakukan `npm run dev`, website akan menampilkan landing page yang memiliki dua buah tombol. 
- - Tombol bernama `Start Race` akan mengarahkan pada halaman race yang merupakan tempat terdapatnya fitur wikirace,  laman race juga dapat diakses dengan menekan tombol `RACE` yang terdapat pada navigation bar.
--  Tombol `Know More` akan mengarahkan ke halaman about us dari website berikut. Laman about us juga dapat diakses melalui tombol `ABOUT US` pada navigation bar.
-
-<br />
-
-### Race Page
-![alt website](./image-3.png)
- - Sesuai perintah pada tampilan, pada halaman ini dapat dimasukkan dua buah hal yang memiliki link wikipedia pada en.wikipedia.org/.
- - Halaman ini juga menjadi tempat pemilihan jenis algoritma yang ingin digunakan antara `BFS` dan `IDS`.
- - Setelah melakukan pemilihan jenis algoritma, laman kemudian akan menampilkan tombol `GO` untuk memulai proses pencarian.
-
- Berikut salah satu contoh penggunaan wikiracing,
- ![alt text](image-4.png)
-
-<br />
-Adapun halaman about us berisikan informasi singkat mengenai pembuat program ini.
-
-<p align="right"><a href="#readme-top">kembali</a></p>
-
-
-
-## Contributors
-|   NIM    |                  Nama                  |
-| :------: | :------------------------------------: |
-| 13522062 |              Salsabiila                |
-| 13522085 |          Zahira Dina Amalia            |
-| 13522087 |                Shulha                  |
-
-<p align="right"><a href="#readme-top">kembali</a></p>
+## Screenshot Contoh Pemakaian
+### CLI
+![Contoh CLI](./test/images/example2.png)
+### GUI
+![Contoh GUI](./test/images/example1.png)
